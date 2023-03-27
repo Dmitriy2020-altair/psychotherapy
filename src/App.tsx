@@ -3,6 +3,7 @@ import GlobalStyels from './components/styles/Global';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './components/styles/Theme.styled';
 import Header from './components/header/Header';
+import MainQuoteBlock from './components/home/QuoteBlock';
 
 export default function App() {
   const [theme, setTheme] = useState(lightTheme);
@@ -17,6 +18,7 @@ export default function App() {
       <Header
         toggleTheme={toggleTheme}
       />
+      <MainQuoteBlock />
     </ThemeProvider>
   )
 }

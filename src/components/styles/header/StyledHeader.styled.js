@@ -77,3 +77,24 @@ export const SocialIconWrapper = styled.a`
     margin: 0;
   }
 `
+export const MainHeader = styled.section`
+  text-align: center;
+`
+
+export const MainTitle = styled.h1`
+  color: ${props => props.theme.colors.text};
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+
+  @media (max-width: 865px) {
+    margin: 25px 0 0 0;
+  }
+
+`
+
+export const Slogan = styled.h4`
+  color: ${props => props.theme.colors.text};
+  margin: 0;
+`

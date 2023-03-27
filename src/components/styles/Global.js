@@ -9,6 +9,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: ${props => props.theme.colors.background};
+   * {
+    box-sizing: border-box;
+   }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

@@ -10,7 +10,10 @@ import {
   UpperHeader,
   UpperHeaderInner,
   SocialWrapper,
-  SocialIconWrapper
+  SocialIconWrapper,
+  MainHeader,
+  MainTitle,
+  Slogan
 } from "../styles/header/StyledHeader.styled";
 import LangSelect from "./LangSelect";
 import Toggle, { ToggleProps } from "./Toggle";
@@ -19,8 +22,10 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebook, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { Contacts } from "../../constants/config";
 import CookieConsent from "./CookieConsent";
+import { useTranslation } from "react-i18next";
 
 const Header: React.FC<ToggleProps> = ({ toggleTheme }) => {
+  const { t } = useTranslation(['header']);
 
   return (
     <StyledHeader>
@@ -72,6 +77,16 @@ const Header: React.FC<ToggleProps> = ({ toggleTheme }) => {
           </UpperHeaderInner>
         </Container >
       </UpperHeader>
+      <Container>
+        <MainHeader>
+          <MainTitle>
+            {t('mainTitle')}
+          </MainTitle>
+          <Slogan>
+            {t('description')}
+          </Slogan>
+        </MainHeader>
+      </Container>
     </StyledHeader >
   );
 };
