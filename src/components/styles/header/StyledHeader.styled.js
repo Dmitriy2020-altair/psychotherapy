@@ -51,6 +51,10 @@ export const EmailAdressWrapper = styled.a`
   transition: 0.3s ease-in-out;
   padding-top: 10px;
   margin-left: 15px;
+
+  @media (max-width: 865px) {
+    margin: 0 auto;
+  }
 `;
 
 export const ContactIconWrapper = styled.span`
