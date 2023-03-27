@@ -1,0 +1,16 @@
+{
+  "langOptions": {
+    "label": "lang",
+    "ukrainian": "УКР",
+    "english": "ENG"
+  },
+  "themeToggler": {
+    "label": "choose theme",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "cookieConsent": {
+    "text": "We use cookies to improve user experience. For example, to save your preferred language on the site. Please allow to use cookies.",
+    "buttonText": "Allow"
+  }
+}
