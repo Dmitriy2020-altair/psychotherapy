@@ -16,10 +16,8 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyels />
-      <Header
-        toggleTheme={toggleTheme}
-      />
-      <MainQuoteBlock />
+      <Header toggleTheme={toggleTheme} />
+      <MainQuoteBlock blue_gradient={theme.colors.blue_gradient} />
       <ScrollToTopButton />
     </ThemeProvider>
   )

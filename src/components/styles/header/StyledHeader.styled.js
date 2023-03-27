@@ -98,5 +98,5 @@ export const MainTitle = styled.h1`
 
 export const Slogan = styled.h4`
   color: ${props => props.theme.colors.text};
-  margin: 0;
+  margin-top: 5px;
 `
