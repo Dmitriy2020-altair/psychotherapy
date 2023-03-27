@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './components/styles/Theme.styled';
 import Header from './components/header/Header';
 import MainQuoteBlock from './components/home/QuoteBlock';
+import ScrollToTopButton from './components/scrollToTopButton/ScrollToTopButton';
 
 export default function App() {
   const [theme, setTheme] = useState(lightTheme);
@@ -19,6 +20,7 @@ export default function App() {
         toggleTheme={toggleTheme}
       />
       <MainQuoteBlock />
+      <ScrollToTopButton />
     </ThemeProvider>
   )
 }

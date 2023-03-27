@@ -77,16 +77,14 @@ const Header: React.FC<ToggleProps> = ({ toggleTheme }) => {
           </UpperHeaderInner>
         </Container >
       </UpperHeader>
-      <Container>
-        <MainHeader>
-          <MainTitle>
-            {t('mainTitle')}
-          </MainTitle>
-          <Slogan>
-            {t('description')}
-          </Slogan>
-        </MainHeader>
-      </Container>
+      <MainHeader>
+        <MainTitle>
+          {t('mainTitle')}
+        </MainTitle>
+        <Slogan>
+          {t('description')}
+        </Slogan>
+      </MainHeader>
     </StyledHeader >
   );
 };

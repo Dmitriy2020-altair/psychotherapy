@@ -79,6 +79,8 @@ export const SocialIconWrapper = styled.a`
 `
 export const MainHeader = styled.section`
   text-align: center;
+  width: 80vw;
+  margin: 0 auto;
 `
 
 export const MainTitle = styled.h1`
