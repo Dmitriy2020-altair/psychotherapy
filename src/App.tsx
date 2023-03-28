@@ -21,9 +21,6 @@ export default function App() {
       <GlobalStyels />
       <Header toggleTheme={toggleTheme} />
       <Navigation />
-      {/* <Routes>
-        <Route path="/" element={<MainQuoteBlock />} />
-      </Routes> */}
       <AppRoutes />
       <ScrollToTopButton />
     </ThemeProvider>

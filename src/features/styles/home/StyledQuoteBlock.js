@@ -15,7 +15,6 @@ export const QuoteBlock = styled.div`
   color: ${props => props.theme.colors.text};
   font-size: 20px;
   font-weight: 500;
-  /* ${({ blue_gradient }) => blue_gradient && `background-image: ${blue_gradient};`} */
   background: ${props => props.theme.colors.blue_gradient};
 
   @media (max-width: 865px) {

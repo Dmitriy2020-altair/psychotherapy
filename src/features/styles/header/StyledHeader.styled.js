@@ -89,14 +89,10 @@ export const MainTitle = styled.h1`
   font-size: 25px;
   letter-spacing: 1px;
   margin-bottom: 0;
-
-  @media (max-width: 865px) {
-    margin: 25px 0 0 0;
-  }
-
+  margin-top: 35px;
 `
 
 export const Slogan = styled.h4`
   color: ${props => props.theme.colors.text};
-  margin-top: 5px;
+  margin: 5px 0 40px 0;
 `
