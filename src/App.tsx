@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import GlobalStyels from './components/styles/Global';
+import GlobalStyels from './features/styles/Global';
 import { ThemeProvider } from 'styled-components';
-import { darkTheme, lightTheme } from './components/styles/Theme.styled';
-import Header from './components/header/Header';
-import MainQuoteBlock from './components/home/QuoteBlock';
-import ScrollToTopButton from './components/scrollToTopButton/ScrollToTopButton';
+import { darkTheme, lightTheme } from './features/styles/Theme.styled';
+import Header from './features/header/Header';
+import ScrollToTopButton from './features/scrollToTopButton/ScrollToTopButton';
+import Navigation from './features/navigation/Navigation';
+// import { Route, Routes } from 'react-router-dom';
+// import MainQuoteBlock from './components/home/MainQuoteBlock';
+import AppRoutes from './routes';
 
 export default function App() {
   const [theme, setTheme] = useState(lightTheme);
@@ -17,7 +20,11 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyels />
       <Header toggleTheme={toggleTheme} />
-      <MainQuoteBlock blue_gradient={theme.colors.blue_gradient} />
+      <Navigation />
+      {/* <Routes>
+        <Route path="/" element={<MainQuoteBlock />} />
+      </Routes> */}
+      <AppRoutes />
       <ScrollToTopButton />
     </ThemeProvider>
   )
