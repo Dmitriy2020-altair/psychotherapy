@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from 'react-router-dom';
 import ROUTES from "src/routes/constants";
-import { Nav, NavWrapper } from "../styles/navigation/StyledNavigation";
-
+import { NotFound } from "src/shared/notFound/NotFoundPage";
+import { Nav, NavItem, NavList, NavWrapper } from "../styles/navigation/StyledNavigation";
 
 const Navigation: React.FC = () => {
   const { t } = useTranslation(['navigation']);
@@ -18,18 +18,19 @@ const Navigation: React.FC = () => {
   return (
     <NavWrapper>
       <Nav>
-        <ul>
-          <li className={activePage === 'home' ? 'active' : ''}>
+        <NavList>
+          <NavItem className={activePage === 'home' ? 'active' : ''}>
             <Link to={ROUTES.home}>{t('home')}</Link>
-          </li>
-          <li className={activePage === 'about' ? 'active' : ''}>
+          </NavItem>
+          <NavItem className={activePage === 'about' ? 'active' : ''}>
             <Link to={ROUTES.about}>{t('about')}</Link>
-          </li>
-          <li className={activePage === 'contacts' ? 'active' : ''}>
+          </NavItem>
+          <NavItem className={activePage === 'contacts' ? 'active' : ''}>
             <Link to={ROUTES.contacts}>{t('contacts')}</Link>
-          </li>
-        </ul>
+          </NavItem>
+        </NavList>
       </Nav>
+      {ROUTES[activePage] ? null : <NotFound />}
     </NavWrapper>
   );
 }

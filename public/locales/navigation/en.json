@@ -1,5 +1,9 @@
 {
   "home": "Home",
   "about":"About me",
-  "contacts":"Contacts"
+  "contacts":"Contacts",
+  "notFound": {
+    "title": "Page Not Found",
+    "text": "The requested page could not be found."
+  }
 }
