@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
-export const QuoteBlockWrapper = styled.section`
+export const MainPageWrapper = styled.main`
   width: 100%;
+`
+
+export const QuoteBlockWrapper = styled.section`
   display: flex;
   margin-top: 30px;
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import MainQuoteBlock from 'src/features/home/MainQuoteBlock';
+import MainBlock from 'src/features/home/MainBlock';
 
 const Home = () => {
   return (
-    <MainQuoteBlock />
+    <MainBlock />
   );
 };
 export default Home;
