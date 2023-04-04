@@ -46,7 +46,7 @@ export const PhoneNumberWrapper = styled.a`
   padding-top: 10px;
 
   &:hover {
-    color: ${props => props.theme.colors.primary_dark_blue};
+    color: ${props => props.theme.colors.onHover};
   }
 `;
 
@@ -63,7 +63,7 @@ export const EmailAdressWrapper = styled.a`
   }
 
   &:hover {
-    color: ${props => props.theme.colors.primary_dark_blue};
+    color: ${props => props.theme.colors.onHover};
   }
 `;
 
