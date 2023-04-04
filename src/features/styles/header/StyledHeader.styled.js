@@ -6,7 +6,7 @@ export const StyledHeader = styled.section`
 
 export const UpperHeader = styled.div`
   width: 100%;
-  border-bottom: 1px solid ${props => props.theme.colors.primary};
+  border-bottom: 1px solid ${props => props.theme.colors.primary_grey};
 `
 export const UpperHeaderInner = styled.div`
   display: flex;
@@ -31,17 +31,23 @@ export const ControlsWrapper = styled.div`
 `
 export const ContactsWrapper = styled.div`
   display: flex;
+
   @media (max-width: 865px) {
     flex-direction: column;
     align-items: center;
   }
 `
+
 export const PhoneNumberWrapper = styled.a`
   font-size: 16px;
   color: ${props => props.theme.colors.text};
   text-decoration: none;
   transition: 0.3s ease-in-out;
   padding-top: 10px;
+
+  &:hover {
+    color: ${props => props.theme.colors.primary_dark_blue};
+  }
 `;
 
 export const EmailAdressWrapper = styled.a`
@@ -54,6 +60,10 @@ export const EmailAdressWrapper = styled.a`
 
   @media (max-width: 865px) {
     margin: 0 auto;
+  }
+
+  &:hover {
+    color: ${props => props.theme.colors.primary_dark_blue};
   }
 `;
 
@@ -72,9 +82,14 @@ export const SocialWrapper = styled.div`
 
 export const SocialIconWrapper = styled.a`
   margin: 10px 30px 0 0;
+  transition: 0.3s ease;
 
   @media (max-width: 865px) {
     margin: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 `
 export const MainHeader = styled.section`

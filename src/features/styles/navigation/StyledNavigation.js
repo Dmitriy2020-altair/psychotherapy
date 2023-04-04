@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const NavWrapper = styled.section`
-    border-top: 1px solid ${props => props.theme.colors.primary};
+    border-top: 1px solid ${props => props.theme.colors.primary_grey};
 `
 
 export const Nav = styled.nav``;

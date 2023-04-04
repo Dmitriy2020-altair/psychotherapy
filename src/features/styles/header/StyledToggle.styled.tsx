@@ -29,6 +29,10 @@ export const ToggleButton = styled.div < { active: boolean } > `
   justify-content: ${({ active }) => active ? 'flex-end' : 'flex-start'};
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export const ThemeIconWrapper = styled.span`

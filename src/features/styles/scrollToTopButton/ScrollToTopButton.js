@@ -6,7 +6,7 @@ export const ScrollToTop = styled.button`
   right: 20px;
   background-color: ${props => props.theme.colors.primary_blue};
   color: #e4e3e3;
-  border: 1px solid ${props => props.theme.colors.primary};
+  border: 1px solid ${props => props.theme.colors.primary_grey};
   border-radius: 50%;
   width: 50px;
   height: 50px;

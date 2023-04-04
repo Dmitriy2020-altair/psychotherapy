@@ -24,11 +24,13 @@ export const LanguageSelect = styled.select`
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: #333;
-  background-color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.primary_dark_blue};
+  background-color: ${props => props.theme.colors.primary_grey};
+
   border: 1px solid #bdbdbd;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.3s ease;
 
   &:focus {
     outline: none;
@@ -36,7 +38,8 @@ export const LanguageSelect = styled.select`
   }
 
   &:hover {
-    border-color: #3f51b5;
+    border-color: ${props => props.theme.colors.onHover};
+    color: #333;
   }
 `;
 
